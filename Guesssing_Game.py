@@ -1,9 +1,9 @@
-import  random
-
+import random
 
 name = input("Enter your name: ")
 print("Good Luck! {}".format(name))
 
+# List of words
 words = ['rainbow', 'computer', 'science', 'programming',
          'python', 'mathematics', 'player', 'condition',
          'reverse', 'water', 'board', 'geeks']
@@ -14,8 +14,15 @@ word = str(random.choice(words))
 
 word_to_update = ""
 
+# Create another variable to store the word
 for letter in word:
     word_to_update = word_to_update + "-"
+
+'''
+Check for the input letter and compare with each letter in the word and then
+replace '-' with alphabet.
+Once all the letters are replaced, declare the winner.
+'''
 
 while True:
     if "-" not in word_to_update:
